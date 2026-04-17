@@ -4,7 +4,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import sv.edu.udb.model.Alumno;
 import sv.edu.udb.repository.AlumnoRepository;
-
 import java.util.List;
 
 @Service
