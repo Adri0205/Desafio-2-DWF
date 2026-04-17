@@ -4,19 +4,19 @@ import jakarta.persistence.*;
 import lombok.*;
 
 @Entity
+@Table(name = "alumno_materia")
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
+@IdClass(AlumnoMateria.class)
 public class AlumnoMateria {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
-
     @ManyToOne
     @JoinColumn(name = "id_alumno")
     private Alumno alumno;
 
+    @Id
     @ManyToOne
     @JoinColumn(name = "id_materia")
     private Materia materia;
