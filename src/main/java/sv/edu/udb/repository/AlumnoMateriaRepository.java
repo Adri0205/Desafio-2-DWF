@@ -1,4 +1,7 @@
 package sv.edu.udb.repository;
 
-public interface AlumnoMateriaRepository {
+import org.springframework.data.jpa.repository.JpaRepository;
+import sv.edu.udb.model.AlumnoMateria;
+
+public interface AlumnoMateriaRepository extends JpaRepository<Alumno, Long> {
 }
